@@ -21,11 +21,11 @@ class Band:
         return f"Band instance. Name = {self.name}"
 
     @classmethod
-    def to_list(cls) :
+    def to_list(cls):
         return cls.instances   
 
 # Here we create a base class, this class will be inherited to other class,
-class Musician:
+class Musician(ABC):
         members = []
         def __init__(self, name):
             self.name = name
@@ -43,7 +43,7 @@ class Musician:
 
             
 
-
+#Create a Guitarist class
 class Guitarist(Musician):
     def __init__(self, name):
         super().__init__(name)
@@ -60,7 +60,7 @@ class Guitarist(Musician):
     def play_solo():
         return "face melting guitar solo"  
 
-
+#Create a Drummer class
 class Drummer(Musician):
     def __init__(self, name):
         super().__init__(name)
@@ -75,7 +75,7 @@ class Drummer(Musician):
     @staticmethod
     def play_solo():
         return "rattle boom crash"
-    
+#Create a Bassist class    
 class Bassist(Musician):
     def __init__(self,name):
         super().__init__(name)

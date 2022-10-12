@@ -1,6 +1,6 @@
 ## LAB - Class 05
 ## Project: pythonic-garage-band
-version: 0.1
+version: 0.2
 
 ## Author: **Mostafa Albelbeisi**
 
